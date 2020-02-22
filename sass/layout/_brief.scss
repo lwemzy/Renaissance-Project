@@ -1,0 +1,37 @@
+.brief {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 40vw;
+  padding: 4rem;
+  //   background-color: goldenrod;
+  &__heading {
+    text-transform: capitalize;
+    font-family: var(--default-font-family-secondary);
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: 0.5rem;
+  }
+
+  &__heading--2 {
+    color: goldenrod;
+  }
+
+  &__heading--italic {
+    font-family: var(--italic-font-family);
+    font-size: 3.5rem;
+    font-weight: 200;
+  }
+
+  &__statement {
+    padding: 1.5rem 0;
+  }
+
+  &__paragraph {
+    // font-size: 1.8rem;
+    text-align: left;
+    font-weight: 200;
+    font-family: var(--default-font-family-secondary);
+    // letter-spacing: 1px;
+  }
+}

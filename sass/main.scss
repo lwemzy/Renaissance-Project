@@ -1,0 +1,17 @@
+// ABSTRACTS
+@import 'abstracts/variables';
+
+// BASE
+@import 'base/base';
+
+// PAGES
+@import 'pages/home';
+
+// LAYOUT
+@import 'layout/header';
+@import 'layout/navigation';
+@import 'layout/about';
+@import 'layout/brief';
+
+// COMPONENTS
+@import 'components/carousel';

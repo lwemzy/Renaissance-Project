@@ -1,0 +1,17 @@
+.carousel {
+  //   background-color: palevioletred;
+  &__image {
+    width: 100%;
+    background-size: cover;
+  }
+
+  &__item {
+    display: none;
+    &--active {
+      display: block;
+    }
+  }
+
+  //TODO
+  // RESIZE IMAGES TO HAVE THE SAME SIZE
+}
