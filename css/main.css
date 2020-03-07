@@ -37,6 +37,19 @@ body {
           flex-direction: column;
 }
 
+.renaissanceTeam {
+  margin: 2rem 0;
+}
+
+.renaissanceTeam__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,8 +61,6 @@ body {
 
 .header__logo {
   height: 5.5rem;
-  width: 100%;
-  padding: 0;
 }
 
 .header__logo-box {
@@ -110,22 +121,31 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 5rem;
+  margin-top: 8rem;
+  margin-bottom: 3rem;
 }
 
 .brief {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 40vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 4rem;
+}
+
+.brief__container {
+  width: 35vw;
+  padding: 1rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.863);
+  border-radius: 4px;
+  -webkit-box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.5);
 }
 
 .brief__heading {
@@ -156,9 +176,16 @@ body {
   font-family: var(--default-font-family-secondary);
 }
 
+.carousel {
+  width: 60vw;
+}
+
 .carousel__image {
   width: 100%;
-  background-size: cover;
+  height: 40rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 4px;
 }
 
 .carousel__item {
@@ -186,12 +213,12 @@ body {
           justify-content: center;
   top: 40%;
   left: 1%;
-  color: white;
+  color: black;
   border-radius: 100%;
   height: 7rem;
   width: 7rem;
   font-size: 5rem;
-  background-color: orangered;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .carousel__arrow-right {
@@ -207,12 +234,12 @@ body {
           justify-content: center;
   top: 40%;
   right: 1%;
-  color: white;
+  color: black;
   border-radius: 100%;
   height: 7rem;
   width: 7rem;
   font-size: 5rem;
-  background-color: orangered;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .carousel__indicators {
@@ -229,15 +256,65 @@ body {
   padding: 2px;
 }
 
+.carousel__caption {
+  position: absolute;
+  bottom: 10%;
+  color: white;
+  padding: 4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.carousel__caption > h5 {
+  color: goldenrod;
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
 .indicator {
   height: 1.5rem;
   width: 1.5rem;
   border-radius: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.8);
-  background-color: gray;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .indicator--active {
   background-color: white;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team__avatar {
+  height: 20rem;
+  width: 20rem;
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 100%;
+}
+
+.team__name {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 1rem 0;
+}
+
+.team__profession {
+  font-weight: 300;
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=main.css.map */

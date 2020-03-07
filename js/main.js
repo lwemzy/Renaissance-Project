@@ -54,10 +54,13 @@
       activeImage();
       activeIndicator();
       index++;
-      index == imgCarousel.length && (index = 0);
-    }, 3000);
+      if (index == imgCarousel.length) {
+        index = 0;
+      }
+    }, 5000);
   };
 
   automateCarousel();
 }
-// TODO RESIZE IMAGAES, ADD ANIMATIONS TO CAROUSEL
+// TODO work on the renaissance team
+// TODO and a background gif in the header
