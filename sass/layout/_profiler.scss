@@ -1,0 +1,62 @@
+.profiler {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  //   background-color: rgba(216, 214, 214, 0.877);
+  //   background-color: rgba(0, 0, 0, 0.5);
+
+  //   border-radius: 1rem;
+  //   height: 80vh;
+  //   width: 55vw;
+  padding: 2rem;
+  //   clip-path: polygon(0% 0%, 47% 0, 100% 54%, 100% 100%, 0% 100%);
+
+  &__brief {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    // font-weight: 300;
+    color: rgb(184, 184, 184);
+    font-family: var(--default-font-family-secondary);
+  }
+
+  &--1 {
+    font-size: 15rem;
+    // position: absolute;
+  }
+  &--2 {
+    font-size: 12rem;
+    align-self: center;
+    z-index: 1;
+
+    // position: absolute;
+  }
+  &--3 {
+    font-size: 15rem;
+
+    // position: absolute;
+  }
+  &--4 {
+    font-size: 5rem;
+    align-self: end;
+    z-index: 1;
+    // position: absolute;
+  }
+  &--5 {
+    font-size: 12rem;
+    // position: absolute;
+    // bottom: 4rem;
+    z-index: 1;
+  }
+  &--0 {
+    font-size: 60rem;
+    font-family: var(--default-font-family);
+
+    // align-self: center;
+    top: 1rem;
+    right: 3rem;
+    position: absolute;
+    color: white;
+    z-index: 0;
+  }
+}

@@ -25,9 +25,23 @@ body {
           box-sizing: border-box;
 }
 
+.heading {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.heading--main {
+  margin: 4rem 0;
+  font-size: 3rem;
+}
+
+.center {
+  text-align: center;
+}
+
 .header-section {
-  padding: 0 2rem;
-  background-color: gray;
+  background-image: url(../../img/headerTech.gif);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -38,16 +52,40 @@ body {
 }
 
 .renaissanceTeam {
-  margin: 2rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: gray;
 }
 
 .renaissanceTeam__container {
+  margin: 2rem 0 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+.wisdom {
+  background-image: url("/img/usb_port.jpg");
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2rem 5rem;
+  height: 100vh;
 }
 
 .header {
@@ -57,14 +95,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  background-color: transparent;
+  padding: 1rem 2rem;
 }
 
 .header__logo {
   height: 5.5rem;
+  width: 100%;
 }
 
 .header__logo-box {
   padding: 0.2rem;
+  background-color: rgba(255, 255, 255, 0.301);
 }
 
 .user-nav__list {
@@ -118,34 +160,21 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 8rem;
   margin-bottom: 3rem;
 }
 
 .brief {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 4rem;
-}
-
-.brief__container {
   width: 35vw;
-  padding: 1rem;
+  padding: 2rem;
   color: white;
   background-color: rgba(0, 0, 0, 0.863);
   border-radius: 4px;
-  -webkit-box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.5);
 }
 
 .brief__heading {
@@ -176,8 +205,100 @@ body {
   font-family: var(--default-font-family-secondary);
 }
 
+.quote {
+  border-radius: 1rem;
+  max-width: 40%;
+  margin: 4rem 0;
+}
+
+.quote__title {
+  color: goldenrod;
+  font-family: var(--default-font-family-secondary);
+  font-size: 3rem;
+}
+
+.quote__text {
+  font-family: var(--italic-font-family);
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+}
+
+.quote__owner {
+  font-family: var(--italic-font-family);
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 2.5px;
+}
+
+.profiler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2rem;
+}
+
+.profiler__brief {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  color: #b8b8b8;
+  font-family: var(--default-font-family-secondary);
+}
+
+.profiler--1 {
+  font-size: 15rem;
+}
+
+.profiler--2 {
+  font-size: 12rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  z-index: 1;
+}
+
+.profiler--3 {
+  font-size: 15rem;
+}
+
+.profiler--4 {
+  font-size: 5rem;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  z-index: 1;
+}
+
+.profiler--5 {
+  font-size: 12rem;
+  z-index: 1;
+}
+
+.profiler--0 {
+  font-size: 60rem;
+  font-family: var(--default-font-family);
+  top: 1rem;
+  right: 3rem;
+  position: absolute;
+  color: white;
+  z-index: 0;
+}
+
 .carousel {
-  width: 60vw;
+  width: 50vw;
 }
 
 .carousel__image {
@@ -291,30 +412,85 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 1rem;
+}
+
+.team:hover {
+  background-color: rgba(218, 165, 32, 0.5);
+  color: black;
+  border-radius: 0.5rem;
+}
+
+.team > span {
+  margin: 0.5rem 0;
 }
 
 .team__avatar {
-  height: 20rem;
-  width: 20rem;
+  height: 15rem;
+  width: 15rem;
   -o-object-fit: contain;
      object-fit: contain;
   border-radius: 100%;
 }
 
 .team__name {
-  font-size: 2rem;
-  font-weight: 700;
-  margin: 1rem 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-align: center;
 }
 
 .team__profession {
   font-weight: 300;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: auto;
+  position: relative;
+  padding: 2rem;
+}
+
+.card__icon {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 100%;
+  background-color: red;
+  position: absolute;
+  top: -1.5rem;
+  left: -1.5rem;
+}
+
+.card__title {
+  text-align: center;
+}
+
+.card__body {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.card__body > p {
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+
+.card__footer {
+  margin: 1rem 0;
+  font-size: 3rem;
+  text-align: right;
+  font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */

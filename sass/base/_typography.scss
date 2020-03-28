@@ -1,5 +1,11 @@
 .heading {
-  &--1 {
-    // margin: 2rem 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+
+  &--main {
+    margin: 4rem 0;
+    font-size: 3rem;
+    // color: white;
   }
 }

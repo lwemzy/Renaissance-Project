@@ -1,6 +1,15 @@
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  // background-color: purple;
   margin-top: 8rem;
   margin-bottom: 3rem;
 }
+
+// TODO align items center
+// TODO refactor this code
+// avoid to much flex nesting
+// align items center
+// align-self carousel stretch
+// TIP always try out ur code in code pen

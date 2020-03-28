@@ -1,16 +1,35 @@
 .header-section {
-  padding: 0 2rem;
-  background-color: gray;
-  //   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0.9));
+  // padding: 0 2rem;
+  // background-color: gray;
+  background-image: url(../../img/headerTech.gif);
   display: flex;
   flex-direction: column;
-  //   border-bottom: 4px solid gold;
+  // border-bottom: 1.5px solid goldenrod;
 }
 
 .renaissanceTeam {
-  margin: 2rem 0;
+  // background-color: rgba(0, 0, 0, 0.99);
+  // background-color: rgba(3, 1, 31, 0.897);
+
+  display: flex;
+  flex-direction: column;
+  color: gray;
+
   &__container {
+    // background-color: black;
+    margin: 2rem 0 4rem 0;
     display: flex;
     justify-content: space-evenly;
   }
+}
+
+.wisdom {
+  // background-color: pink;
+  background-image: url('/img/usb_port.jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 5rem;
+  height: 100vh;
 }

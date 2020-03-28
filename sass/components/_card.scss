@@ -1,0 +1,38 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  position: relative;
+  //   background-color: aqua;
+  padding: 2rem;
+
+  &__icon {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    background-color: red;
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+  }
+
+  &__title {
+    text-align: center;
+  }
+
+  &__body {
+    font-size: 1.6rem;
+    text-align: justify;
+    & > p {
+      white-space: pre-line;
+      word-wrap: break-word;
+    }
+  }
+
+  &__footer {
+    margin: 1rem 0;
+    font-size: 3rem;
+    text-align: right;
+    font-weight: 300;
+  }
+}

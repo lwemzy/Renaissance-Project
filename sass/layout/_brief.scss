@@ -1,17 +1,10 @@
 .brief {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 4rem;
-  // background-color: goldenrod;
-  &__container {
-    width: 35vw;
-    padding: 1rem;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.863);
-    border-radius: 4px;
-    box-shadow: 0 3rem 10rem rgba(0, 0, 0, 0.5);
-  }
+  width: 35vw;
+  padding: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.863);
+  border-radius: 4px;
+  // box-shadow: 0 1px 3rem rgba(0, 0, 0, 0.5);
 
   &__heading {
     text-transform: capitalize;

@@ -4,6 +4,7 @@
 // BASE
 @import 'base/base';
 @import 'base/typography';
+@import 'base/utilities';
 
 // PAGES
 @import 'pages/home';
@@ -13,7 +14,10 @@
 @import 'layout/navigation';
 @import 'layout/about';
 @import 'layout/brief';
+@import 'layout/quote';
+@import 'layout/profiler';
 
 // COMPONENTS
 @import 'components/carousel';
 @import 'components/team';
+@import 'components/card';

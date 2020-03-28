@@ -1,24 +1,39 @@
 .team {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding: 1rem;
+
+  &:hover {
+    background-color: rgba(218, 165, 32, 0.5);
+    color: black;
+    // transform: scaleX(1.1) scaleY(1.1);
+    // box-shadow: 1px 1px 1rem rgba(0, 0, 0, 0.8);
+    border-radius: 0.5rem;
+  }
+
+  & > span {
+    margin: 0.5rem 0;
+  }
 
   &__avatar {
-    height: 20rem;
-    width: 20rem;
+    height: 15rem;
+    width: 15rem;
     object-fit: contain;
     border-radius: 100%;
   }
 
   &__name {
-    font-size: 2rem;
-    font-weight: 700;
-    margin: 1rem 0;
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
   }
 
   &__profession {
     font-weight: 300;
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 }
+
+// TODO Add Parallax effect to the site
