@@ -1,0 +1,20 @@
+.btn {
+  padding: 1rem 2rem;
+  border: 1px solid black;
+  text-transform: uppercase;
+
+  &--link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: black;
+    }
+  }
+
+  &:hover,
+  &--link:hover {
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    background-color: goldenrod;
+  }
+}
