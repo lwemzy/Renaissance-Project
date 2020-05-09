@@ -7,12 +7,17 @@
 }
 
 html {
-  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 body {
-  font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 500;
   font-family: var(--default-font-family);
-  box-sizing: border-box;
+  line-height: 1.4;
+  color: white;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
 }

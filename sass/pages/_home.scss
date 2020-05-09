@@ -1,31 +1,38 @@
-.header-section {
-  display: flex;
-  flex-direction: column;
+.hero {
+  padding: 2em 0;
+  display: block;
+  background: url('/img/header-img.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.navigation {
+  background-color: $color1;
 }
 
 .renaissanceTeam {
-  // background-color: rgba(0, 0, 0, 0.99);
-  // background-color: rgba(3, 1, 31, 0.897);
-
-  display: flex;
-  flex-direction: column;
-  color: gray;
-
+  padding: 2em 0;
+  background-color: darken($color: $color11, $amount: 5);
+  // background: repeating-radial-gradient(
+  //   circle,
+  //   darken($color: $color11, $amount: 2) 0,
+  //   darken($color: $color11, $amount: 2) 1em,
+  //   $color11 1em,
+  //   $color11 2em
+  // );
   &__container {
-    // background-color: black;
-    margin: 2rem 0 4rem 0;
     display: flex;
     justify-content: space-evenly;
   }
 }
 
 .wisdom {
-  // background-color: pink;
-  background-image: url('/img/usb_port.jpg');
-  background-size: cover;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2rem 5rem;
-  height: 100vh;
+  color: black;
+  padding: 2em 0;
+
+  &-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
 }

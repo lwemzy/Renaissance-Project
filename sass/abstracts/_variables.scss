@@ -1,12 +1,15 @@
-//   font-family: 'Dancing Script', ;
-
-//   font-family: 'Roboto', ;
-
-//   font-family: 'Raleway', ;
-//   font-family: 'Comfortaa', ;
-
 :root {
-  --default-font-family: 'Roboto';
-  --italic-font-family: 'Dancing Script';
-  --default-font-family-secondary: 'Raleway';
+  --default-font-family: Arial, Helvetica, sans-serif;
 }
+
+$color1: hsl(201, 100%, 14%);
+$color2: hsl(0, 69%, 50%);
+$color3: hsl(31, 100%, 48%);
+$color4: hsl(40, 97%, 64%);
+$color5: hsl(51, 55%, 82%);
+
+$color11: hsl(229, 19%, 22%);
+$color21: #bfc0c0ff;
+$color31: #ffffffff;
+$color41: #ef8354ff;
+$color51: #4f5d75ff;

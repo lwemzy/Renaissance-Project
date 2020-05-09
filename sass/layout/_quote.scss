@@ -1,44 +1,55 @@
 .quote {
-  border-radius: 1rem;
-  max-width: 40%;
-  //   color: white;
-  margin: 4rem 0;
+  display: inline-block;
+  max-width: 450px;
   position: relative;
+  padding: 0 1em;
 
   &__title {
-    color: goldenrod;
-    font-family: var(--default-font-family-secondary);
-    font-size: 3rem;
+    color: darken($color: $color4, $amount: 20);
+    font-family: var(--default-font-family);
+    font-size: 1em;
+    padding-bottom: 1em;
   }
 
   &__text {
     font-family: var(--italic-font-family);
-    font-size: 2.5rem;
+    line-height: 1.8;
     font-weight: 700;
     letter-spacing: 2.5px;
+    z-index: 2;
+  }
 
-    // & span {
-    //   font-size: 4rem;
-    // }
+  p {
+    display: flex;
+    justify-content: flex-end;
   }
 
   &__owner {
+    padding-right: 1em;
     font-family: var(--italic-font-family);
-    font-size: 4rem;
+    font-size: 1.5em;
     font-weight: 300;
     letter-spacing: 2.5px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '\201C';
+      left: -10px;
+      top: 5px;
+    }
   }
 
-  // &::before {
-  //   // use ISO numbers in css
-  //   content: '\201C';
-  //   position: absolute;
-  //   z-index: 1;
-  //   top: 5rem;
-  //   left: -0.5rem;
-  //   line-height: 1;
-  //   font-size: 4rem;
-  //   font-family: sans-serif;
-  //   color: var(--color-grey-light-2);
-  // }
+  &::before {
+    // use ISO numbers in css
+    content: '\201C';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0.3em;
+    line-height: 1;
+    font-size: 20rem;
+    font-family: sans-serif;
+    color: lighten($color: $color4, $amount: 25);
+  }
 }

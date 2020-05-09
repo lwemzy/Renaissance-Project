@@ -1,67 +1,45 @@
 .profiler {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  //   background-color: rgba(216, 214, 214, 0.877);
-  //   background-color: rgba(0, 0, 0, 0.5);
-
-  //   border-radius: 1rem;
-  //   height: 80vh;
-  //   width: 55vw;
-  padding: 2rem;
-  //   clip-path: polygon(0% 0%, 47% 0, 100% 54%, 100% 100%, 0% 100%);
+  margin-left: -30em;
 
   &__brief {
-    display: flex;
-    flex-direction: column;
     position: relative;
-    // font-weight: 300;
-    color: rgb(184, 184, 184);
-    font-family: Oswald;
     text-transform: uppercase;
   }
 
   &--1 {
-    font-size: 15rem;
-    // position: absolute;
+    font-size: 3.5rem;
+    left: 20px;
+    position: absolute;
+    bottom: 155px;
   }
   &--2 {
-    font-size: 12rem;
-    align-self: center;
-    z-index: 1;
-
-    // position: absolute;
-  }
-  &--3 {
-    font-size: 15rem;
-
-    // position: absolute;
+    font-size: 3.5rem;
+    left: 20px;
+    bottom: 70px;
+    position: absolute;
   }
   &--4 {
-    font-size: 5rem;
+    font-size: 3.5rem;
     align-self: end;
-    z-index: 1;
-    // position: absolute;
+    top: -62px;
+    left: 20px;
+    position: absolute;
   }
   &--5 {
-    font-size: 12rem;
-    // position: absolute;
-    // bottom: 4rem;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 4rem;
+    left: 255px;
+    bottom: 55px;
     z-index: 1;
   }
   &--0 {
-    font-size: 60rem;
+    font-size: 20rem;
     font-family: var(--default-font-family);
-
-    // align-self: center;
-    top: 1rem;
-    right: 3rem;
+    bottom: -115px;
+    left: 115px;
     position: absolute;
-    color: white;
+    color: inherit;
     z-index: 0;
-  }
-
-  & > a {
-    align-self: end;
   }
 }
