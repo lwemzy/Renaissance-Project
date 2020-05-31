@@ -1,9 +1,9 @@
 .brief {
   padding: 1em;
   display: inline-block;
-  max-width: 450px;
+  width: 40%;
   color: inherit;
-  background-color: rgba(45, 49, 66, 0.3);
+  background-color: rgba(45, 49, 66, 0.7);
   border-radius: 4px;
 
   &__heading {
@@ -19,7 +19,7 @@
 
     &--italic {
       font-family: var(--italic-font-family);
-      font-size: 2em;
+      font-size: 1.8rem;
       font-weight: 200;
     }
   }

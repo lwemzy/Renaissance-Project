@@ -1,6 +1,6 @@
 .btn {
   padding: 6px 12px;
-  border: 1px solid black;
+  border: 1px solid initial;
   border-radius: 4px;
   text-transform: uppercase;
 
@@ -9,7 +9,7 @@
     &:visited {
       border: 1px solid darken($color: $color4, $amount: 20);
       text-decoration: none;
-      color: black;
+      color: initial;
       cursor: pointer;
       transition: all 0.4ms ease-in;
     }
@@ -18,7 +18,7 @@
   &:hover,
   &--link:hover {
     color: white;
-    transform: translateY(-2px);
+    transform: translateY(-1px);
     background-color: darken($color: $color4, $amount: 20);
     box-shadow: 1px 1px 2px $color11;
   }

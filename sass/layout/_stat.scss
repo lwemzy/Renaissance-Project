@@ -1,0 +1,58 @@
+.stat {
+  display: flex;
+  justify-content: space-between;
+
+  &__paragraph {
+    // background-color: red;
+    // padding: 0 1em;
+    width: 45%;
+  }
+
+  &__illustrations {
+    width: 45%;
+    // padding: 1em;
+    // background-color: orange;
+  }
+
+  &__1 {
+    height: 4rem;
+    border-radius: 10px;
+    background-color: darken($color: $color4, $amount: 20);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &::before {
+      z-index: 0;
+      position: absolute;
+      content: '';
+      background-color: $color1;
+      height: 4rem;
+      width: 80%;
+      border-radius: 10px 50px 50px 10px;
+    }
+
+    div {
+      z-index: 1;
+    }
+
+    span {
+      font-size: 1.5rem;
+      color: white;
+      display: block;
+      padding: 0 10px;
+    }
+
+    span + span {
+      font-size: 0.65rem;
+    }
+  }
+
+  &__2 {
+    margin-top: 2em;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: violet;
+  }
+}
