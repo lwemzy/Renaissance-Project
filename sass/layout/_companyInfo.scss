@@ -1,0 +1,47 @@
+.companyInfo {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  &__address {
+    & > div {
+      display: flex;
+      align-items: center;
+
+      & > i {
+        font-size: 2em;
+        margin-right: 0.5em;
+      }
+
+      & > div {
+        font-size: 0.75em;
+      }
+    }
+  }
+
+  &__social {
+    align-self: flex-end;
+    font-size: 2em;
+
+    a {
+      text-decoration: none;
+    }
+
+    .fa-facebook-f {
+      color: #4267b2;
+    }
+
+    .fa-twitter {
+      color: #00acee;
+    }
+    .fa-whatsapp {
+      color: #25d366;
+    }
+    .fa-youtube {
+      color: #c4302b;
+    }
+  }
+
+  div + div {
+    margin-top: 0.5em;
+  }
+}

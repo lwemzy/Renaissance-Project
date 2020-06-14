@@ -62,6 +62,3 @@
 
   automateCarousel();
 }
-// TODO work on the renaissance team
-// TODO and a background gif in the header
-// TODO change this file to use jsonObject modules

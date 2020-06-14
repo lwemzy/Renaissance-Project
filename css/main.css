@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Oswald&display=swap");
 :root {
   --default-font-family: Arial, Helvetica, sans-serif;
+  --italic-font-family: 'Dancing Script';
+  --default-font-family-secondary: 'Raleway';
 }
 
 *,
@@ -15,9 +17,11 @@
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   font-weight: 500;
   font-family: var(--default-font-family);
   line-height: 1.4;
@@ -215,7 +219,6 @@ body {
 }
 
 .quote__text {
-  font-family: var(--italic-font-family);
   line-height: 1.8;
   font-weight: 700;
   letter-spacing: 2.5px;
@@ -390,6 +393,8 @@ body {
 }
 
 .stat__paragraph {
+  line-height: 1.7;
+  font-size: 1.125em;
   width: 45%;
 }
 
@@ -439,10 +444,184 @@ body {
 }
 
 .stat__2 {
-  margin-top: 2em;
   height: 4rem;
   border-radius: 10px;
   background-color: violet;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stat__2 div {
+  height: 100%;
+  z-index: 1;
+  background-color: #002e47;
+}
+
+.stat__2 div + div {
+  background-color: #dd9403;
+  border-radius: 0px 50px 50px 0px;
+}
+
+.stat__2 span {
+  font-size: 1.5rem;
+  color: white;
+  display: block;
+  padding: 0 10px;
+}
+
+.stat__2 span + span {
+  font-size: 0.65rem;
+}
+
+.companyInfo {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.companyInfo__address > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.companyInfo__address > div > i {
+  font-size: 2em;
+  margin-right: 0.5em;
+}
+
+.companyInfo__address > div > div {
+  font-size: 0.75em;
+}
+
+.companyInfo__social {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-size: 2em;
+}
+
+.companyInfo__social a {
+  text-decoration: none;
+}
+
+.companyInfo__social .fa-facebook-f {
+  color: #4267b2;
+}
+
+.companyInfo__social .fa-twitter {
+  color: #00acee;
+}
+
+.companyInfo__social .fa-whatsapp {
+  color: #25d366;
+}
+
+.companyInfo__social .fa-youtube {
+  color: #c4302b;
+}
+
+.companyInfo div + div {
+  margin-top: 0.5em;
+}
+
+.footer {
+  background: #2d3143;
+}
+
+.footer__container {
+  background: #303446;
+}
+
+.footer__logo {
+  padding: 1em;
+  width: 100%;
+}
+
+.copyrights {
+  border-top: 1px solid #252837;
+  background: #303446;
+  padding: 0.625em;
+  text-align: center;
+  color: white;
+}
+
+.copyrights__renaissance {
+  display: inline-block;
+  text-transform: capitalize;
+}
+
+.copyrights__designer {
+  text-transform: capitalize;
+  color: inherit;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.copyrights__designer span > i {
+  color: red;
+}
+
+.copyrights__designer:link,
+.copyrights__designer :visited {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.copyrights__designer:hover {
+  color: goldenrod;
+}
+
+.copyrights__logo {
+  display: inline-block;
+  width: 1.5em;
+  padding: 0;
+  margin-left: 1em;
+}
+
+.fab--btn {
+  position: fixed;
+  right: 0.375em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid gold;
+  bottom: 0.5em;
+  font-size: 3em;
+  display: inline-block;
+  background-color: #303446;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  -webkit-box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+          box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+}
+
+.fab--btn:link {
+  text-decoration: none;
 }
 
 .team {

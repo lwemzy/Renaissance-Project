@@ -1,0 +1,10 @@
+.footer {
+  background: $color11;
+  &__container {
+    background: lighten($color: $color11, $amount: 1);
+  }
+  &__logo {
+    padding: 1em;
+    width: 100%;
+  }
+}

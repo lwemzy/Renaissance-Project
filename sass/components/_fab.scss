@@ -1,0 +1,23 @@
+.fab--btn {
+  position: fixed;
+  right: 0.375em;
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  border: 2px solid gold;
+  bottom: 0.5em;
+  font-size: 3em;
+  display: inline-block;
+  background-color: lighten($color: $color11, $amount: 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.8);
+
+  &:link {
+    text-decoration: none;
+  }
+
+  //   when hoovered change the cursor to point up
+}

@@ -8,9 +8,11 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
+  position: relative;
   font-weight: 500;
   font-family: var(--default-font-family);
   line-height: 1.4;
